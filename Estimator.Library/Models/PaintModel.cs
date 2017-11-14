@@ -9,11 +9,11 @@ namespace Estimator.Library.Models
 	public class PaintModel
 	{
 		/// <summary>
-		/// Represents a type of paint binder (like oil or acrylic)
+		/// Type of paint (like oil or acrylic)
 		/// </summary>
 		public string Type { get; set; }
 		/// <summary>
-		/// Represents a price per mililiter in PLN.
+		/// Average paint price per milliliter in PLN.
 		/// </summary>
 		public decimal Price { get; set; }
 	}

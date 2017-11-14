@@ -9,7 +9,7 @@ namespace Estimator.Library.Models
 	public class BoardModel
 	{
 		/// <summary>
-		/// Represents the type of board, like canvas or wooden panel.
+		/// Type of painting board, like canvas or wooden panel.
 		/// </summary>
 		public string Type { get; set; }
 		/// <summary>
@@ -17,7 +17,7 @@ namespace Estimator.Library.Models
 		/// </summary>
 		public List<Dimension> SizeList { get; set; } = new List<Dimension>();
 		/// <summary>
-		/// Represents price per 1 square centimeter of a board, given in PLN.
+		/// Board price per 1 square centimeter, given in PLN.
 		/// </summary>
 		public decimal Price { get; set; }
 	}

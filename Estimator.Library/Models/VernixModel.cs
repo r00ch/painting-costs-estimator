@@ -13,7 +13,7 @@ namespace Estimator.Library.Models
 		/// </summary>
 		public string PaintType { get; set; }
 		/// <summary>
-		/// Represents the type based on ingredients.
+		/// Vernix type based on ingredients.
 		/// </summary>
 		public string VernixType { get; set; }
 		/// <summary>
@@ -21,7 +21,7 @@ namespace Estimator.Library.Models
 		/// </summary>
 		public string Gloss { get; set; }
 		/// <summary>
-		/// Represents a price per mililiter in PLN.
+		/// Vernix price per milliliter in PLN.
 		/// </summary>
 		public decimal Price { get; set; }
 	}

@@ -68,6 +68,7 @@
 			this.removeBrushButton = new System.Windows.Forms.Button();
 			this.fullCostBox = new System.Windows.Forms.GroupBox();
 			this.fullPriceLabel = new System.Windows.Forms.Label();
+			this.brushListBoxLabel = new System.Windows.Forms.Label();
 			this.boardBox.SuspendLayout();
 			this.brushesBox.SuspendLayout();
 			this.mediumsBox.SuspendLayout();
@@ -90,7 +91,7 @@
 			this.boardBox.Size = new System.Drawing.Size(518, 142);
 			this.boardBox.TabIndex = 0;
 			this.boardBox.TabStop = false;
-			this.boardBox.Text = "Board";
+			this.boardBox.Text = "Painting board";
 			// 
 			// boardSizeComboBox
 			// 
@@ -350,6 +351,7 @@
 			// 
 			// costsBox
 			// 
+			this.costsBox.Controls.Add(this.brushListBoxLabel);
 			this.costsBox.Controls.Add(this.removeBrushButton);
 			this.costsBox.Controls.Add(this.addBrushButton);
 			this.costsBox.Controls.Add(this.brushesPriceLabel);
@@ -465,9 +467,9 @@
 			this.brushesListBox.ForeColor = System.Drawing.Color.DimGray;
 			this.brushesListBox.FormattingEnabled = true;
 			this.brushesListBox.ItemHeight = 30;
-			this.brushesListBox.Location = new System.Drawing.Point(27, 184);
+			this.brushesListBox.Location = new System.Drawing.Point(27, 214);
 			this.brushesListBox.Name = "brushesListBox";
-			this.brushesListBox.Size = new System.Drawing.Size(225, 184);
+			this.brushesListBox.Size = new System.Drawing.Size(225, 124);
 			this.brushesListBox.TabIndex = 8;
 			// 
 			// brushesPriceLabel
@@ -525,20 +527,34 @@
 			this.fullPriceLabel.TabIndex = 0;
 			this.fullPriceLabel.Text = "<Full price>";
 			// 
+			// brushListBoxLabel
+			// 
+			this.brushListBoxLabel.AutoSize = true;
+			this.brushListBoxLabel.Font = new System.Drawing.Font("Segoe UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.brushListBoxLabel.ForeColor = System.Drawing.Color.DimGray;
+			this.brushListBoxLabel.Location = new System.Drawing.Point(22, 181);
+			this.brushListBoxLabel.Name = "brushListBoxLabel";
+			this.brushListBoxLabel.Size = new System.Drawing.Size(85, 30);
+			this.brushListBoxLabel.TabIndex = 12;
+			this.brushListBoxLabel.Text = "Brushes:";
+			// 
 			// EstimateCostsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(967, 533);
+			this.ClientSize = new System.Drawing.Size(959, 533);
 			this.Controls.Add(this.fullCostBox);
 			this.Controls.Add(this.costsBox);
 			this.Controls.Add(this.mediumsBox);
 			this.Controls.Add(this.brushesBox);
 			this.Controls.Add(this.boardBox);
 			this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+			this.MaximizeBox = false;
 			this.Name = "EstimateCostsForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Painting Costs Estimator";
 			this.boardBox.ResumeLayout(false);
 			this.boardBox.PerformLayout();
@@ -596,6 +612,7 @@
 		private System.Windows.Forms.Label boardTypeAndSizeLabel;
 		private System.Windows.Forms.GroupBox fullCostBox;
 		private System.Windows.Forms.Label fullPriceLabel;
+		private System.Windows.Forms.Label brushListBoxLabel;
 	}
 }
 
