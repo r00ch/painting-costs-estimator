@@ -9,6 +9,10 @@ namespace Estimator.Library.Models
 	public class BoardModel
 	{
 		/// <summary>
+		/// The unique identifier for the board type.
+		/// </summary>
+		public int Id { get; set; }
+		/// <summary>
 		/// Type of painting board, like canvas or wooden panel.
 		/// </summary>
 		public string Type { get; set; }
@@ -20,6 +24,16 @@ namespace Estimator.Library.Models
 		/// Board price per 1 square centimeter, given in PLN.
 		/// </summary>
 		public decimal Price { get; set; }
+
+		public BoardModel() { }
+		public BoardModel(string typeName, string price)
+		{
+			Type = typeName;
+
+			decimal priceValue = 0;
+			decimal.TryParse(price, out priceValue);
+			Price = priceValue;
+		}
 	}
 
 }

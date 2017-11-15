@@ -133,6 +133,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Estimator.Library\Estimator.Library.csproj">
+      <Project>{7f1ab1fa-bab8-4cbd-a247-dd449b7a25e3}</Project>
+      <Name>Estimator.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

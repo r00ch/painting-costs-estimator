@@ -29,11 +29,11 @@
 		private void InitializeComponent()
 		{
 			this.newBoardBox = new System.Windows.Forms.GroupBox();
-			this.newBoardNameLabel = new System.Windows.Forms.Label();
-			this.newBoardpriceLabel = new System.Windows.Forms.Label();
-			this.newBoardNameTextBox = new System.Windows.Forms.TextBox();
-			this.newBoardPriceTextBox = new System.Windows.Forms.TextBox();
 			this.createBoardButton = new System.Windows.Forms.Button();
+			this.newBoardPriceTextBox = new System.Windows.Forms.TextBox();
+			this.newBoardNameTextBox = new System.Windows.Forms.TextBox();
+			this.newBoardpriceLabel = new System.Windows.Forms.Label();
+			this.newBoardNameLabel = new System.Windows.Forms.Label();
 			this.newBoardBox.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -53,15 +53,34 @@
 			this.newBoardBox.TabStop = false;
 			this.newBoardBox.Text = "New board:";
 			// 
-			// newBoardNameLabel
+			// createBoardButton
 			// 
-			this.newBoardNameLabel.AutoSize = true;
-			this.newBoardNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.newBoardNameLabel.Location = new System.Drawing.Point(23, 41);
-			this.newBoardNameLabel.Name = "newBoardNameLabel";
-			this.newBoardNameLabel.Size = new System.Drawing.Size(74, 30);
-			this.newBoardNameLabel.TabIndex = 0;
-			this.newBoardNameLabel.Text = "Name:";
+			this.createBoardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.createBoardButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.createBoardButton.Location = new System.Drawing.Point(68, 215);
+			this.createBoardButton.Name = "createBoardButton";
+			this.createBoardButton.Size = new System.Drawing.Size(160, 60);
+			this.createBoardButton.TabIndex = 11;
+			this.createBoardButton.Text = "Create";
+			this.createBoardButton.UseVisualStyleBackColor = true;
+			this.createBoardButton.Click += new System.EventHandler(this.createBoardButton_Click);
+			// 
+			// newBoardPriceTextBox
+			// 
+			this.newBoardPriceTextBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.newBoardPriceTextBox.Location = new System.Drawing.Point(28, 155);
+			this.newBoardPriceTextBox.Name = "newBoardPriceTextBox";
+			this.newBoardPriceTextBox.Size = new System.Drawing.Size(240, 35);
+			this.newBoardPriceTextBox.TabIndex = 3;
+			this.newBoardPriceTextBox.Text = "0,00";
+			// 
+			// newBoardNameTextBox
+			// 
+			this.newBoardNameTextBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.newBoardNameTextBox.Location = new System.Drawing.Point(28, 74);
+			this.newBoardNameTextBox.Name = "newBoardNameTextBox";
+			this.newBoardNameTextBox.Size = new System.Drawing.Size(240, 35);
+			this.newBoardNameTextBox.TabIndex = 2;
 			// 
 			// newBoardpriceLabel
 			// 
@@ -73,32 +92,15 @@
 			this.newBoardpriceLabel.TabIndex = 1;
 			this.newBoardpriceLabel.Text = "Price:";
 			// 
-			// newBoardNameTextBox
+			// newBoardNameLabel
 			// 
-			this.newBoardNameTextBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.newBoardNameTextBox.Location = new System.Drawing.Point(28, 74);
-			this.newBoardNameTextBox.Name = "newBoardNameTextBox";
-			this.newBoardNameTextBox.Size = new System.Drawing.Size(240, 35);
-			this.newBoardNameTextBox.TabIndex = 2;
-			// 
-			// newBoardPriceTextBox
-			// 
-			this.newBoardPriceTextBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.newBoardPriceTextBox.Location = new System.Drawing.Point(28, 155);
-			this.newBoardPriceTextBox.Name = "newBoardPriceTextBox";
-			this.newBoardPriceTextBox.Size = new System.Drawing.Size(240, 35);
-			this.newBoardPriceTextBox.TabIndex = 3;
-			// 
-			// createBoardButton
-			// 
-			this.createBoardButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.createBoardButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-			this.createBoardButton.Location = new System.Drawing.Point(68, 215);
-			this.createBoardButton.Name = "createBoardButton";
-			this.createBoardButton.Size = new System.Drawing.Size(160, 60);
-			this.createBoardButton.TabIndex = 11;
-			this.createBoardButton.Text = "Create";
-			this.createBoardButton.UseVisualStyleBackColor = true;
+			this.newBoardNameLabel.AutoSize = true;
+			this.newBoardNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.newBoardNameLabel.Location = new System.Drawing.Point(23, 41);
+			this.newBoardNameLabel.Name = "newBoardNameLabel";
+			this.newBoardNameLabel.Size = new System.Drawing.Size(74, 30);
+			this.newBoardNameLabel.TabIndex = 0;
+			this.newBoardNameLabel.Text = "Name:";
 			// 
 			// CreateBoardTypeForm
 			// 

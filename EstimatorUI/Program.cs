@@ -16,7 +16,11 @@ namespace EstimatorUI
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new EstimateCostsForm());
+
+			//initialize the database cannection
+			Estimator.Library.GlobalConfig.InitializeConnection(true, false);
+
+			Application.Run(new CreateBoardTypeForm());
 		}
 	}
 }
